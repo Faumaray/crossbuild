@@ -1,8 +1,8 @@
-FROM buildpack-deps:trixie-curl
+FROM buildpack-deps:bookworm-curl
 MAINTAINER Aleksey Selikhov <faumaray@gmail.com> (https://github.com/faumaray)
 
 # Install deps
-RUN set -x; echo "Starting image build for Debian Trixie" \
+RUN set -x; echo "Starting image build for Debian bookworm" \
  && dpkg --add-architecture arm64                      \
  && dpkg --add-architecture armel                      \
  && dpkg --add-architecture armhf                      \
