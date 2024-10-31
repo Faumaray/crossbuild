@@ -61,7 +61,7 @@ RUN apt-get install -y mingw-w64 \
 
 #Build arguments
 ARG osxcross_repo="tpoechtrager/osxcross"
-ARG osxcross_revision="542acc2ef6c21aeb3f109c03748b1015a71fed63"
+ARG osxcross_revision="29fe6dd35522073c9df5800f8cd1feb4b9a993a8"
 ARG darwin_sdk_version="10.10"
 ARG darwin_osx_version_min="10.6"
 ARG darwin_version="14"
