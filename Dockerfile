@@ -3,7 +3,8 @@ MAINTAINER Aleksey Selikhov <faumaray@gmail.com> (https://github.com/faumaray)
 
 # Install deps
 RUN set -x; echo "Starting image build for Debian bookworm" \
- && apt install -y software-properties-common             \
+ && apt update                                          \
+ && apt-get install -y software-properties-common             \
  && add-apt-repository 'deb [arch=arm64,armel,armhf,i386,mips,mipsel,powerpc,ppc64el] http://ports.ubuntu.com/ubuntu-ports oracular-updated main restricted'				   \
  && add-apt-repository 'deb [arch=arm64,armel,armhf,i386,mips,mipsel,powerpc,ppc64el] http://ports.ubuntu.com/ubuntu-ports oracular universe'				   \
  && add-apt-repository 'deb [arch=arm64,armel,armhf,i386,mips,mipsel,powerpc,ppc64el] http://ports.ubuntu.com/ubuntu-ports oracular-updates universe'				   \
