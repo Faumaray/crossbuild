@@ -1,4 +1,4 @@
-FROM buildpack-deps:bookworm-curl
+FROM buildpack-deps:oracular-curl
 MAINTAINER Aleksey Selikhov <faumaray@gmail.com> (https://github.com/faumaray)
 
 # Install deps
